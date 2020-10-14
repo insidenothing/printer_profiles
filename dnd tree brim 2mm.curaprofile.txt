@@ -1,0 +1,54 @@
+version = 4
+name = DnD Tree Support w/ Brim
+definition = creality_base
+
+[metadata]
+quality_type = super
+type = quality_changes
+setting_version = 15
+
+[values]
+adaptive_layer_height_variation = 0.1
+adhesion_type = brim
+speed_slowdown_layers = 4
+support_enable = True
+support_structure = tree
+support_type = everywhere
+
+version = 4
+name = DnD Tree Support w/ Brim
+definition = creality_base
+
+[metadata]
+quality_type = super
+position = 0
+type = quality_changes
+setting_version = 15
+intent_category = default
+
+[values]
+brim_gap = 0
+brim_line_count = 10
+brim_outside_only = False
+brim_width = 4.0
+clean_between_layers = False
+infill_sparse_density = 40
+retraction_hop = 0.4
+retraction_hop_enabled = True
+skirt_brim_minimal_length = 50
+speed_layer_0 = 5.0
+speed_print = 15.0
+speed_travel = =150.0 if speed_print < 60 else 250.0 if speed_print > 100 else speed_print * 2.5
+support_angle = =math.floor(math.degrees(math.atan(line_width/2.0/layer_height)))
+support_infill_rate = 5
+support_interface_density = 10
+support_pattern = lines
+support_roof_line_distance = 1.0
+support_skip_some_zags = False
+support_tree_angle = 30
+support_wall_count = 1
+support_xy_distance = 0.8
+support_xy_distance_overhang = 0.8
+support_xy_overrides_z = z_overrides_xy
+support_zag_skip_count = =0 if support_line_distance == 0 else round(support_skip_zag_per_mm / support_line_distance)
+top_bottom_pattern_0 = concentric
