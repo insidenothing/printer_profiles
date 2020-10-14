@@ -1,0 +1,46 @@
+
+version = 4
+name = DnD Structures
+definition = creality_base
+
+[metadata]
+quality_type = draft
+type = quality_changes
+setting_version = 15
+
+[values]
+adhesion_type = brim
+layer_height = 0.6
+support_enable = True
+support_type = buildplate
+
+version = 4
+name = DnD Structures
+definition = creality_base
+
+[metadata]
+quality_type = draft
+setting_version = 15
+type = quality_changes
+position = 0
+intent_category = default
+
+[values]
+alternate_extra_perimeter = True
+coasting_enable = True
+fill_outline_gaps = True
+infill_pattern = zigzag
+infill_sparse_density = 60
+magic_fuzzy_skin_enabled = False
+magic_fuzzy_skin_outside_only = True
+material_print_temperature = 225
+retraction_hop_enabled = True
+speed_layer_0 = 10.0
+speed_print = 40.0
+speed_topbottom = =speed_print / 2
+speed_wall = =speed_print / 2
+support_angle = 33
+support_pattern = cross
+wall_line_count = =1 if magic_spiralize else max(1, round((wall_thickness - wall_line_width_0) / wall_line_width_x) + 1) if wall_thickness != 0 else 0
+xy_offset = 1
+z_seam_type = random
